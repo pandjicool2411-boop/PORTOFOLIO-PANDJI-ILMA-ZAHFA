@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+}
+.wrapper{
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+nav {
+    background-color: #19183B;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #F3F2EC;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 100px;
+}
+
+/*
+* Hero / Jumbotron
+*/
+header {
+    background: url("../images/WhatsApp\ Image\ 2025-10-05\ at\ 12.52.48.jpeg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+.header-opacity {
+    background-color: #19183B;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-jumbotron > h4 {
+    color: #FAB12F;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+.header-jumbotron > h5 {
+    color: blanchedalmond;
+    margin: 0px;
+    padding: 5px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+    padding: 5px;
+    margin: 0px 5px 10px 5px;
+    color: #D2C1B6;
+}
+
+a {
+    text-decoration: none;
+    color:antiquewhite;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #3C467B;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: "Lobster", sans-serif;
+}
+.button-xl {
+    font-size: 1rem;
+    padding: 15px;
+}
+
+/*
+* Pendidikan 
+*/
+
+#pendidikan {
+    background-color: #19183B;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.education-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #E6D8C3;
+    border-radius: 20px;
+    padding: 80px 20px; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-group {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-group h3 {
+    font-size: 22px;
+    color: #444;
+    margin: 50px 0 25px 0; 
+    border-bottom: 2px solid #999;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.education-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.education-card {
+    background: #fff;
+    width: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.education-card h4,
+.education-card p {
+    text-align: center; 
+}
+
+/*
+* tentang saya
+*/
+
+#tentang-saya {
+    background-color: #E6D8C3;
+    color: #000000;
+}
+
+#tentang-saya  > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#tentang-saya > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#tentang-saya > .wrapper > div {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tentang-saya > .wrapper > div > .foto {
+    width: 100%;
+}
+
+#tentang-saya > .wrapper > div > .foto > img {
+    max-width: 100%;
+}
+
+#tentang-saya > .wrapper > div > .desc {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #D2C1B6;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    color: black;
+}
+
+/*
+* Latar Pendidikan
+*/
+
+#Latar-Pendidikan {
+    background-color: #C2A68C;
+    color: black;
+    position: relative;
+    width: 100%;
+}
+
+#latar-Pendidikan > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Latar-Pendidikan > .wrapper > h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Latar-Pendidikan > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Latar-Pendidikan > .wrapper > div {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+}
+
+#Latar-Pendidikan > .wrapper > div > .foto {
+    flex: 1 1 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+#Latar-Pendidikan > .wrapper > div > .foto > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+#Latar-Pendidikan > .wrapper > div > .desc {
+    flex: 1 1 60%;
+    padding: 20px;
+    background-color: #E6D8C3;
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    color: rgb(14, 14, 15);
+    border-top: 2px solid #E6D8C3;
+    border-right: 2px solid #E6D8C3; 
+    border-bottom: 2px solid #E6D8C3; 
+    border-left: none; 
+    box-sizing: border-box; 
+}
+
+/* ===== CONTACT / SOCIAL LINKS ===== */
+#contact {
+    background-color: #1A1A19;
+    color: #F8F5E9;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contact h2 {
+    color: #E6D8C3;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #F8F5E9;
+    background-color: #292929;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    background-color: #ffce10;
+    color: #1A1A19;
+}
+
+.social-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-item span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: #333;
+}
